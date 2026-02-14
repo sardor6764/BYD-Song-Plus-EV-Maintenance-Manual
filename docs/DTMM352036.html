@@ -1,0 +1,210 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="Precautions"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-1-F5240221"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>Precautions</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-1-F5240221">
+         
+         
+         
+         <h3 class="topictitletopic1 title">Precautions</h3>
+         
+         
+         <div class="body"> 
+            
+            <div class="section">
+               <h3 class="title topictitle1">Operation Safety Precautions and Warnings</h3> 
+               
+               
+               <p class="p"> 
+                  
+                  <div>
+                     <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d12632e19">
+                        <div class="noteheader">
+                           <div class="common tip">
+                              <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                        </div>
+                        <div class="notebody attention-text postspace-s wl-attention-content"> 
+                           
+                           <p class="p"> 
+                              
+                              <ul name="contents" class="ul"> 
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">The integrated power brake assembly can only be replaced as a whole. Partition test or replacement/interchange is not allowed.</p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">The brake fluid is corrosive. Never stain the brake fluid on other parts of the vehicle.</p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">After the brake tube connector nut is removed, block the sealing pipeline, integrated power brake assembly and other interfaces
+                                       to prevent foreign matters from entering.
+                                    </p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">The oil pipe joint nut is easy to be misaligned. Screw 3~5 threads into the hole by hand before using an oil pipe wrench.</p> 
+                                    
+                                 </li> 
+                                 
+                              </ul>
+                              
+                              
+                           </p> 
+                           
+                        </div>
+                     </div>
+                     
+                  </div>  
+                  
+                  <div>
+                     <div class="wl-attention prespace postspace warning-imgwarning" data-attention-type="warning" id="d12632e52">
+                        <div class="noteheader">
+                           <div class="common tip">
+                              <div><img style="width:100%;height:100%;" src="basefiles/artwork/warningv2.svg"></img></div><span class="notetitleone">Warning</span></div>
+                        </div>
+                        <div class="notebody attention-text postspace-s wl-attention-content"> 
+                           
+                           <p class="p"> 
+                              
+                              <ul name="contents" class="ul"> 
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">Before diagnosing the integrated power brake, if there is a fault in the basic brake system, it must be eliminated first,
+                                       such as noise in the brake system, soft brake pedal, vibration of the brake pedal during normal braking, vehicle braking deviation,
+                                       and parking brake system fault.
+                                    </p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">The brake fluid is corrosive. Never contaminate the brake fluid on the skin. If so, immediately clean it with plenty of water.</p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">The integrated power brake must be maintained by technicians who have received professional trainings and mastered maintenance
+                                       skills. And only original parts can be used for replacement.
+                                    </p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">When replacing the brake tube, always replace the brake line clamp as well.</p> 
+                                    
+                                 </li>  
+                                 
+                                 <li> 
+                                    
+                                    <p class="p-inline">After the maintenance of the integrated power brake, check it carefully and conduct a road test. The vehicle can be handed
+                                       over to the customer only after ensuring everything is normal.
+                                    </p> 
+                                    
+                                 </li> 
+                                 
+                              </ul>
+                              
+                              
+                           </p> 
+                           
+                        </div>
+                     </div>
+                     
+                  </div> 
+                  
+               </p> 
+               
+            </div>
+            
+            
+         </div>
+         
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

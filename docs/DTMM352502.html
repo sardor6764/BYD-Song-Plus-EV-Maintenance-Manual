@@ -1,0 +1,765 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="Safety Common Sense"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-1-F5240221"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>Safety Common Sense</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-1-F5240221">
+         
+         
+         
+         <h3 class="topictitletopic1 title">Safety Common Sense</h3>
+         
+         
+         <div class="body"> 
+            
+            <div class="section">
+               <h3 class="title topictitle1">Electrical Safety</h3> 
+               
+               
+               <p class="p"> 
+                  
+                  <div class="bottomNoTable">
+                     <div class="imagecenter"><img width="170mm" style="width:170mm;" onclick="showOrHideImg(event,'show')" src="image/G023189.png"></img></div>
+                  </div> 
+                  
+               </p>  
+               
+               <p class="p"> 
+                  
+                  
+                  <table width="100%" border="1" frame="box" rules="all">  
+                     
+                     
+                     
+                     <thead style="font-weight: bold"> 
+                        
+                        <tr align="center" valign="middle"> 
+                           
+                           <th width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Symbol</p> 
+                              
+                           </th>  
+                           
+                           <th width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Meaning</p> 
+                              
+                           </th> 
+                           
+                        </tr> 
+                        
+                     </thead>  
+                     
+                     <tbody> 
+                        
+                        <tr align="center" valign="middle"> 
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>A</p> 
+                              
+                           </td>  
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Release limit</p> 
+                              
+                           </td> 
+                           
+                        </tr>  
+                        
+                        <tr align="center" valign="middle"> 
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>B</p> 
+                              
+                           </td>  
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Release limit 10ms</p> 
+                              
+                           </td> 
+                           
+                        </tr>  
+                        
+                        <tr align="center" valign="middle"> 
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>C</p> 
+                              
+                           </td>  
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Ventricular fibrillation</p> 
+                              
+                           </td> 
+                           
+                        </tr>  
+                        
+                        <tr align="center" valign="middle"> 
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>D</p> 
+                              
+                           </td>  
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Over 300ms</p> 
+                              
+                           </td> 
+                           
+                        </tr>  
+                        
+                        <tr align="center" valign="middle"> 
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>E</p> 
+                              
+                           </td>  
+                           
+                           <td width="50%" align="center" valign="&#xA;            top&#xA;          "> 
+                              
+                              <p>Possible ventricular fibrillation</p> 
+                              
+                           </td> 
+                           
+                        </tr> 
+                        
+                     </tbody> 
+                     
+                  </table> 
+                  
+                  
+               </p><span class="ph b">
+                  <p class="p">Strength class 1:</p></span><p class="p"></p>  
+               
+               <ul name="contents" class="ul"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">No matter how long it is, there is no adverse effect.</p> 
+                     
+                  </li> 
+                  
+               </ul>
+               
+               
+               <p class="p"><span class="ph b">Strength class 2:</span></p>  
+               
+               <ul name="contents" class="ul"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">0.5~2.0mA: current can be felt.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">3~5mA: begin to feel pain.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">10~20mA: release limit value.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">It is generally not dangerous when current flows through the body.</p> 
+                     
+                  </li> 
+                  
+               </ul>
+               
+               
+               <p class="p"><span class="ph b">Strength class 3:</span></p>  
+               
+               <ul name="contents" class="ul"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Muscle spasm.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Dyspnea.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Arrhythmia.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Generally, it will not cause organ injury.</p> 
+                     
+                  </li> 
+                  
+               </ul>
+               
+               
+               <p class="p"><span class="ph b">Strength class 4:</span></p>  
+               
+               <ul name="contents" class="ul"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Cardiac fibrillation.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Cardiac arrest.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Respiratory arrest.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Life threatening.</p> 
+                     
+                  </li> 
+                  
+               </ul>
+               
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Hazardous current.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Alternating current above 25V and direct current above 60V are dangerous.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">A current of about 5mA passing through the human body is regarded as an "Electrical Accident". In such case, numbness will
+                                    occur, but the current can still be conducted.
+                                 </p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">A current of about 10mA passing through the human body reaches the limit of the derived current. The human body begins to
+                                    contract and can no longer conduct the current. The residence time of the current increases accordingly.
+                                 </p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Prolonged retention of 30~50mA alternating current leads to respiratory arrest and ventricular fibrillation.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">When the current passing through the human body is about 80mA or more, it is considered as the "Critical Value".</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Why is AC voltage more dangerous than DC voltage?</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">AC voltage generates alternating current in the human body, which will cause muscle tissue and the heart to vibrate.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">The lower the frequency of AC voltage, the higher the risk.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Alternating current may trigger ventricular fibrillation, which is fatal without first aid.</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Internal resistance of human body.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">For high current caused by high voltage, the corresponding resistance in human body is very low. In particular, the blood
+                              in all blood vessels is a good conductor. Different contact points in electrical accidents have different effects on human
+                              body.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Example: electrical accident caused by 288V DC voltage:</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">The skin resistance varies greatly. (depending on skin hardness, humidity, conductivity...) However, for voltages above 100V,
+                                    the skin resistance is almost 0 Ω. The skin is completely punctured.
+                                 </p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Example of human current: I=U/R=288V/1080Ω=0.27A.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">If the retention time of alternating current in the heart reaches about 10~15ms, it will be fatal (ventricular fibrillation).</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+            <div class="section">
+               <h3 class="title topictitle1">Electrical Accident</h3> 
+               
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Electric shock and accident consequences.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Electric shock effect.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">There will be electric shock response when the current is lower than the conduction limit, which is easy to cause injury due
+                                    to uncontrolled limbs and loss of balance.
+                                 </p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Thermal effect.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Burns and coking may occur at the current inlet and outlet points, internal burns may occur as well. The kidneys may be overloaded,
+                                    which is fatal.
+                                 </p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Chemical effects.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Blood and cell fluid become electrolyte and get electrolyzed. Serious poisoning occurs. The poisoning may be found after a
+                                    few days, making the damage serious.
+                                 </p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Muscle stimulation effect.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">All body functions and muscle movements are controlled by the brain through electro photoluminescence of the nervous system.
+                                    If the current through the human body is too high, the muscles begin to twitch, and the brain can no longer control the muscle
+                                    tissue.
+                                 </p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Consequences: for example, a clenched fist can no longer be opened or moved. If the current passes through the thoracic cavity,
+                                    the lungs will produce spasm (respiratory arrest), and the heartbeat rhythm will be interrupted (ventricular fibrosis and
+                                    fibrillation, unable to perform the contraction and deployment of the heart).
+                                 </p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Thermal effect of static short circuit.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">The sharp heating of the tool will melt the material, which may cause burns.</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Spark due to short circuit.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">The metal melts quickly, producing splashing sparks, and the temperature of splashed metal particles exceeds 5000°C. This
+                                    may cause burns and serious eye injury.
+                                 </p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Arc light generated when the live high voltage line is connected and disconnected.</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Light radiation may cause electric ophthalmia.</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">First aid measures for electric shock accidents.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">What should be remembered to when rescuing the injured in an electrical accident?</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Your own safety comes first.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Never touch a person who is still in contact with the voltage.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">If possible, power off the electrical system immediately (turn off the ignition switch or pull out the maintenance switch
+                                    immediately).
+                                 </p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Use non-conductive objects (wood, broom handle, etc.) to separate the victim or conductor from the voltage.</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">What shall be noted when giving first aid after an electric shock accident (no response from the victim)?</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">First, determine whether the victim still has vital signs, such as pulse and breathing.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Call the emergency doctor immediately, or ask someone else to do it.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Give cardiopulmonary resuscitation until the doctor arrives.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">In case of respiratory arrest: use a nonprofessional defibrillator (if any).</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">What shall be noted when giving first aid after an electric shock accident (the victim has response)?</p>  
+                           
+                           <ul name="contents" class="ul"> 
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Cool the burned area and wrap it up with sterilized lint free cloth.</p> 
+                                 
+                              </li>  
+                              
+                              <li> 
+                                 
+                                 <p class="p-inline">Even if the victim refuses, make him receive treatment (to avoid long-term sequelae).</p> 
+                                 
+                              </li> 
+                              
+                           </ul>
+                           
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">First aid measures for starter iron battery accident.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">In case of skin contact, rinse it with plenty of water.</p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">In case of inhale gas, immediately breathe a lot of fresh air.</p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">In case of eye contact, rinse it with plenty of water (for at least 10min).</p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">If swallowed starter iron battery, drink plenty of water and avoid vomiting.</p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Seek medical assistance.</p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+         </div>
+         
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

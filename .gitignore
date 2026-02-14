@@ -1,0 +1,25 @@
+# Extracted folder (redundant with docs/)
+extracted/
+
+# Original zip file (already in docs/)
+*.zip
+
+# IDE and editor files
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Python cache
+__pycache__/
+*.pyc
+.Python
+
+# Node modules (if applicable)
+node_modules/
+
+# Environment variables
+.env
+.env.local

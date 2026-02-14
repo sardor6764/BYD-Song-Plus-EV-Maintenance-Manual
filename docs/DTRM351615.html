@@ -1,0 +1,354 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="Wheel alignment"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="DTRM54506"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>Wheel alignment</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="DTRM54506">
+         
+         
+         
+         <h3 class="topictitletopic1 title">Wheel alignment</h3>
+         
+         
+         <div class="body"> 
+            
+            <div>
+               <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d28831e12">
+                  <div class="noteheader">
+                     <div class="common tip">
+                        <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                  </div>
+                  <div class="notebody attention-text postspace-s wl-attention-content"> 
+                     
+                     <ul name="contents" class="ul"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">The kingpin caster angle and inclination angle of front wheel, and the front and rear cambers cannot be adjusted. In case
+                              of out of range, check whether the suspension components are bent or damaged. In case of bending or damaged suspension parts,
+                              replace the affected parts, and do not attempt to maintain the damaged parts by hammering or other means.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">If the front wheel toe-in is correct, but the steering angle falls beyond the specified range or the internal steering angles
+                              are different, check suspension parts for bending or damage. In case of bending or damaged suspension parts, replace the affected
+                              parts, and do not attempt to maintain the damaged parts by hammering or other means.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ul>
+                     
+                     
+                  </div>
+               </div>
+               
+            </div>  
+            
+            <ol class="num"> 
+               
+               <li> 
+                  
+                  <p class="p-inline">Inspection before four-wheel alignment:</p>  
+                  
+                  <ol class="num"> 
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Release the parking brake to avoid incorrect measurement.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Check and confirm no modification has been made to the suspension.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Check and confirm the specifications of all four tires are the same and correct, and the tire pressure is within the specified
+                           pressure range.
+                        </p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Check and confirm no person stay in the vehicle and the vehicle is free of excess load.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Check each anchor point of the suspension for loose and deformation, and check and confirm the ball joint clearance of the
+                           suspension is appropriate.
+                        </p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Check wheels for vibration and swing.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Check and confirm the symmetric positions on both sides of the vehicle are in the same height.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">The steering wheel alignment tolerance is 0°±0.2°.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Conduct the wheel dynamic balance test, and reinstall wheel back to the vehicle after the test.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Let the wheel device jump for several times to stabilize the suspension.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">The test bench is in normal state.</p> 
+                        
+                     </li>  
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Adjust the toe-in of rear wheels first and then the front wheels.</p> 
+                        
+                     </li> 
+                     
+                  </ol> 
+                  
+               </li>  
+               
+               <li> 
+                  
+                  <p class="p-inline">Detection</p>  
+                  
+                  <ol class="num"> 
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Conduct wheel alignment inspection in accordance with the operating instructions of the four-wheel aligner.</p> 
+                        
+                     </li> 
+                     
+                  </ol> 
+                  
+               </li>  
+               
+               <li>
+                  <p class="p-inline">Method for adjusting rear wheel toe-in:</p>
+                  <ol class="num">
+                     <li>
+                        <p class="p-inline">Loosen 2 fixing nuts.</p>
+                     </li>
+                     <li>
+                        <p class="p-inline">Rotate rear control arm adjustment bushing until reaching the correct toe-in value.</p>
+                     </li>
+                     <li>
+                        <p class="p-inline">After adjustment, clamp the rear control arm adjustment sleeve to ensure that the toe-in setting does not change, and tighten
+                           the adjustment nut.
+                        </p>
+                        <ul name="contents" class="ul"> 
+                           
+                           <li> 
+                              
+                              <p class="p-inline">Tightening torque: 90±5N•m</p> 
+                              
+                           </li> 
+                           
+                        </ul>
+                        
+                        <div>
+                           <div class="wl-attention prespace postspace tip-imgtip" data-attention-type="tip" id="d28831e151">
+                              <div class="noteheader">
+                                 <div class="common tip">
+                                    <div><img style="width:100%;height:100%;" src="basefiles/artwork/tipsv2.svg"></img></div><span class="notetitleone">Reminder</span></div>
+                              </div>
+                              <div class="notebody attention-text postspace-s wl-attention-content">The left and right wheels are adjusted in the same way.</div>
+                           </div>
+                           
+                        </div>
+                     </li>
+                  </ol>
+                  <p> 
+                     
+                     <div class="bottomNoTable">
+                        <div class="imagecenterlevel1"><img width="85mm" style="width:85mm;" onclick="showOrHideImg(event,'show')" src="image/G129694.png"></img></div>
+                     </div> 
+                     
+                  </p>
+               </li>
+               <li> 
+                  
+                  <p class="p-inline">Method for adjusting front wheel toe-in:</p>
+                  <div>
+                     <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d28831e162">
+                        <div class="noteheader">
+                           <div class="common tip">
+                              <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                        </div>
+                        <div class="notebody attention-text postspace-s wl-attention-content">Center the steering wheel spoke.</div>
+                     </div>
+                     
+                  </div>
+                  <ol class="num"> 
+                     
+                     <li> 
+                        
+                        <p class="p-inline">Loosen one elastic clamp.</p> 
+                        
+                     </li>  
+                     
+                     
+                     <li>
+                        <p class="p-inline">Clamp the flat part of the steering tie rod with a wrench.</p>
+                     </li>
+                     <li> 
+                        
+                        <p class="p-inline">Loosen 1 fixing nuts.</p> 
+                        
+                     </li>
+                     <li> 
+                        
+                        <p class="p-inline">Rotate the end of the gear rack until the toe-in is correct.</p>
+                     </li>
+                     <li> 
+                        
+                        <p class="p-inline">After adjustment, clamp the steering tie rod and tighten the lock nut. Make sure that the toe-in setting does not change.</p> 
+                        
+                        <ul name="contents" class="ul"> 
+                           
+                           <li> 
+                              
+                              <p class="p-inline">Tightening torque: 70±5N•m</p> 
+                              
+                           </li> 
+                           
+                        </ul>
+                        
+                        <div>
+                           <div class="wl-attention prespace postspace tip-imgtip" data-attention-type="tip" id="d28831e197">
+                              <div class="noteheader">
+                                 <div class="common tip">
+                                    <div><img style="width:100%;height:100%;" src="basefiles/artwork/tipsv2.svg"></img></div><span class="notetitleone">Reminder</span></div>
+                              </div>
+                              <div class="notebody attention-text postspace-s wl-attention-content">The left and right wheels are adjusted in the same way.</div>
+                           </div>
+                           
+                        </div>
+                     </li> 
+                     
+                  </ol> 
+                  
+                  <p> 
+                     
+                     <div class="bottomNoTable">
+                        <div class="imagecenterlevel1"><img width="85mm" style="width:85mm;" onclick="showOrHideImg(event,'show')" src="image/G129698.png"></img></div>
+                     </div> 
+                     
+                  </p>
+                  <p> 
+                     
+                     <div class="bottomNoTable">
+                        <div class="imagecenterlevel1"><img width="85mm" style="width:85mm;" onclick="showOrHideImg(event,'show')" src="image/G129700.png"></img></div>
+                     </div> 
+                     
+                  </p>
+               </li> 
+               
+            </ol> 
+            
+         </div>
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

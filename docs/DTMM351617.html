@@ -1,0 +1,409 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="System Description"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-1-F5240221"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>System Description</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-1-F5240221">
+         
+         
+         <h3 class="topictitletopic1 title">System Description</h3>
+         
+         <div class="body">
+            <div class="section">
+               <h3 class="title topictitle1">Component Location View</h3>
+               <p class="p">
+                  <div class="bottomNoTable">
+                     <div class="imagecenter"><img width="170mm" style="width:170mm;" onclick="showOrHideImg(event,'show')" src="image/G137431.png"></img></div>
+                  </div>
+               </p>
+               <p class="p">
+                  <table width="100%" border="1" frame="box" rules="all">
+                     <thead style="font-weight: bold">
+                        <tr align="center" valign="middle">
+                           <th width="50%" align="center" valign="middle">
+                              <p>SN.</p>
+                           </th>
+                           <th width="50%" align="center" valign="middle">
+                              <p>Name</p>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>1</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Small probe (right front bumper)</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="50%" align="center" valign="middle">
+                              <p>2</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Small probe (left front bumper)</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="50%" align="center" valign="middle">
+                              <p>3</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Small probe (outer side of right rear bumper)</p>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td width="50%" align="center" valign="middle">
+                              <p>4</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Small probe (inside the right rear bumper)</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>5</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Small probe (inside the left rear bumper)</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>6</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Small probe (outer side of left rear bumper)</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </p>
+            </div>
+            
+            <div class="section">
+               <h3 class="title topictitle1">System Principle</h3>
+               <ol class="num">
+                  <li>
+                     <p class="p-inline">The park assist system is a vehicle monitoring system which imitates the bat flight detection. Several small probes are installed
+                        at the rear and front of the vehicle to transmit and receive signals and feed back to the control module. The control module
+                        calculates the distance of the measured obstacles based on the signal turn-back time, and then triggers different sound and
+                        indicator alarms according to distances, so as to help reversing and parking.
+                     </p>
+                  </li>
+                  <li>
+                     <p class="p-inline">The park assist system is enabled, which meets the working conditions of the probes. The left domain control module controls
+                        the front and rear small probes to detect obstacles through ultrasonic waves, makes the buzzer alarm, and sends messages to
+                        the multimedia and power amplifier. The multimedia and power amplifier will analyze them and then make sound and image alarms.
+                     </p>
+                  </li>
+               </ol>
+            </div>
+            
+            <div class="section">
+               <h3 class="title topictitle1">System Description</h3>
+               <ol class="num">
+                  <li>
+                     <p class="p-inline">Small probe position and detection range.</p>
+                     <p>
+                        <table width="100%" border="1" frame="box" rules="all">
+                           <thead style="font-weight: bold">
+                              <tr align="center" valign="middle">
+                                 <th width="50%" align="center" valign="middle">
+                                    <p>Small probe position</p>
+                                 </th>
+                                 <th width="50%" align="center" valign="middle">
+                                    <p>Detection range (mm)</p>
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr align="center" valign="middle">
+                                 <td width="50%" align="center" valign="middle">
+                                    <p>Front sides</p>
+                                 </td>
+                                 <td width="50%" align="center" valign="middle">
+                                    <p>600</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="50%" align="center" valign="middle">
+                                    <p>Rear sides</p>
+                                 </td>
+                                 <td width="50%" align="center" valign="middle">
+                                    <p>600</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="50%" align="center" valign="middle">
+                                    <p>Rear center</p>
+                                 </td>
+                                 <td width="50%" align="center" valign="middle">
+                                    <p>1200</p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </p>
+                  </li>
+                  <li>
+                     <p class="p-inline">Small probe alarm state.</p>
+                     <p>
+                        <table width="100%" border="1" frame="box" rules="all">
+                           <thead style="font-weight: bold">
+                              <tr align="center" valign="middle">
+                                 <th width="25%" align="center" valign="middle">
+                                    <p>Small probe position</p>
+                                 </th>
+                                 <th width="25%" align="center" valign="middle">
+                                    <p>Detection distance (mm)</p>
+                                 </th>
+                                 <th width="25%" align="center" valign="middle">
+                                    <p>Buzzer alarm sound</p>
+                                 </th>
+                                 <th width="25%" align="center" valign="middle">
+                                    <p>Interface color state</p>
+                                 </th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" rowspan="2" align="center" valign="middle">
+                                    <p>Left front small probe</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 300~600</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Fast</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Yellow</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 0~300</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Blow</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Red</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" rowspan="2" align="center" valign="middle">
+                                    <p>Right front small probe</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 300~600</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Fast</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Yellow</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 0~300</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Blow</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Red</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" rowspan="2" align="center" valign="middle">
+                                    <p>Left rear small probe</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 300~600</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Fast</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Yellow</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 0~300</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Blow</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Red</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" rowspan="2" align="center" valign="middle">
+                                    <p>Right rear small probe</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 300~600</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Fast</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Yellow</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 0~300</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Blow</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Red</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" rowspan="3" align="center" valign="middle">
+                                    <p>Rear middle small probe</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 700~1200</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Slow</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Green</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 300~700</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Fast</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Yellow</p>
+                                 </td>
+                              </tr>
+                              <tr align="center" valign="middle">
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>About 0~300</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Blow</p>
+                                 </td>
+                                 <td width="25%" align="center" valign="middle">
+                                    <p>Red</p>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </p>
+                  </li>
+                  <li>
+                     <p class="p-inline">When the reversing radar system is enabled, the vehicle speed is less than 10km/h, and the small probe detects obstacles,
+                        the buzzer will make an alarm.
+                     </p>
+                  </li>
+                  <li>
+                     <p class="p-inline">The shorter the distance between the vehicle and the obstacle, the more frequent the alarm sound. When the distance between
+                        the obstacle and the vehicle is within 0.3m, the buzzer will sound for a long time. Never continue driving at this time.
+                     </p>
+                  </li>
+               </ol>
+            </div>
+            
+            <div class="section">
+               <h3 class="title topictitle1">System Block Diagram</h3>
+               <p class="p">
+                  <div class="bottomNoTable">
+                     <div class="imagecenter"><img width="170mm" style="width:170mm;" onclick="showOrHideImg(event,'show')" src="image/G146507.svg" height="567" alt="G146507"></img></div>
+                  </div>
+               </p>
+            </div>
+            
+         </div>
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

@@ -1,0 +1,603 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="Battery Safety"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-1-F5240221"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>Battery Safety</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-1-F5240221">
+         
+         
+         
+         <h3 class="topictitletopic1 title">Battery Safety</h3>
+         
+         
+         <div class="body"> 
+            
+            <div class="section">
+               <h3 class="title topictitle1">Risky Vehicles</h3> 
+               
+               
+               <p class="p">The power battery is at risk in the following cases:</p>  
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The vehicle has been wading for more than 30min, and the water depth reaches the door sill, but there is no water in the vehicle.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The vehicle power battery high voltage and low voltage connectors are immersed in water.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The power battery is deformed, punctured and leaked after an impact.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The vehicle is on fire.</p> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+            <div class="section">
+               <h3 class="title topictitle1">Risk Determination</h3> 
+               
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">First detect the highest temperature point of the power battery with a handheld infrared thermal imager or infrared thermometer
+                        when a risky vehicle is transported to or enters the store.
+                        <div>
+                           <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d15873e59">
+                              <div class="noteheader">
+                                 <div class="common tip">
+                                    <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                              </div>
+                              <div class="notebody attention-text postspace-s wl-attention-content">Handheld infrared thermal imager/infrared temperature tester: the range must cover -50°C ~ 380°C.</div>
+                           </div>
+                           
+                        </div> 
+                        
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The temperature of the damaged part of the power battery pack is 10°C higher than the ambient temperature or there is a significant
+                        temperature rise relative to the ambient temperature (2°C/min).
+                        <div>
+                           <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d15873e68">
+                              <div class="noteheader">
+                                 <div class="common tip">
+                                    <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                              </div>
+                              <div class="notebody attention-text postspace-s wl-attention-content">spray a large amount of water to cool the battery pack until the temperature drops below the ambient temperature.</div>
+                           </div>
+                           
+                        </div> 
+                        
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The battery tray is severely deformed (the dent-depth of the bearing area is more than 10mm) and damaged.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The battery has been ablated by flame or baked for a long time (flame distance ＞ 10cm, duration ＞ 10min).</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The battery is ablated by flame, with ablation symptom, and baked at close range (flame distance ＜ 10cm, duration ＞ 3min).</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">An electric leakage fault is reported after wading for over 30min.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The battery tray is damaged or leaking.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Vehicles that meet any of the above conditions are high-risk vehicles.</p> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+            <div class="section">
+               <h3 class="title topictitle1">Transportation of Risky Vehicles</h3> 
+               
+               
+               <p class="p">For vehicles that need to be transported to the store for maintenance, determine the risk level according to the risk identification
+                  content, and conduct the pre-transportation treatment accordingly:
+               </p>  
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">For vehicles with risks, use a hand-held infrared thermal imager or infrared thermometer to detect the maximum temperature
+                        of the power battery. Vehicles with no abnormal temperature and no high risk can be transported to the store for further overhaul.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">For vehicles with abnormal temperature or high risks, spray a large amount of water to cool the battery pack. After the fire
+                        is extinguished, continuously cool it with water for more than 30min until the temperature drops below the ambient temperature,
+                        and then it can be transported.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">For the power battery with abnormal temperature during transportation, re-measure the temperature every 5min to determine
+                        whether cooling is required. For high-risk vehicles without abnormal temperature, re-measure the temperature every 10min during
+                        transportation to determine whether cooling is required.
+                        <div>
+                           <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d15873e138">
+                              <div class="noteheader">
+                                 <div class="common tip">
+                                    <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                              </div>
+                              <div class="notebody attention-text postspace-s wl-attention-content">If possible, use a temperature monitoring system to monitor the temperature of the battery pack, where the monitoring points
+                                 shall not be less than 8.
+                              </div>
+                           </div>
+                           
+                        </div> 
+                        
+                     </p> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+            <div class="section">
+               <h3 class="title topictitle1">Disposal of Risky Vehicles</h3> 
+               
+               
+               <p class="p">When a risky vehicle arrives, determine the risk level according to the risk identification content, and conduct the treatment
+                  accordingly:
+               </p>  
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">For vehicles with risks, use a hand-held infrared thermal imager or infrared thermometer to detect the maximum temperature
+                        of the power battery. If the temperature is normal and the vehicle is not at high risk, overhaul the vehicle according to
+                        the "Safe Maintenance" chapter and the Maintenance Manual, but the battery temperature must be detected every 1h. If there
+                        is no exception for 12h, the battery will be deemed as not at risk.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">For vehicles with abnormal temperature or high risk, the battery pack must be cooled by spraying a large amount of water until
+                        the temperature drops below the ambient temperature. The specific operations are as below:
+                     </p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">When a vehicle with abnormal temperature arrives, first cool it down (at the same time, cut off the low voltage power of vehicle).
+                              The next operation shall be carried out after its temperature is below the ambient temperature.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">When a vehicle with abnormal temperature cools down, remove the battery pack according to the "Safe Maintenance” chapter.
+                              For high-risk vehicles, remove the battery pack in the first place. Monitor the power battery temperature throughout the process.
+                              For abnormal temperature rise, use a large amount of water to cool it down.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Transfer the removed power battery to a safe area. Remove the sealing cover (use a knife to cut the adhesive sealing cover
+                              and avoid scratching the personnel). Quickly disconnect the connecting pieces and BIC connectors between modules with an electric
+                              insulating tool.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Take out the deformed and heating modules separately and place them in 3.6% salt water. A large amount of hydrogen and oxygen
+                              will be produced by electrolysis. Keep away from fire source and well ventilated. Never wear any metal ornaments to avoid
+                              sparks. Avoid static electricity in dry environment. Spraying water is acceptable. After being placed in 3.6% salt water for
+                              12h, ensure the module voltage is lower than 1/2 of the nominal voltage. Dry the modules with an air gun. And then move them
+                              to the high-risk battery storage area.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">In case of water immersion, damage and heating of the sampling line, open the side cover of each module and cut off all core
+                              sampling lines (cut off 1cm close to the core to prevent re-contact). This is only applicable to the battery where the centralized
+                              BMS uses the wire as the sampling line. This is not applicable to the battery where the distributed BMS uses the FPC sampling
+                              line.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">After the battery is removed, overhaul the vehicle according to the "Safe Maintenance" chapter and the Maintenance Manual.</p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+            <div class="section">
+               <h3 class="title topictitle1">Storage Conditions of High-risk Battery</h3> 
+               
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Discharge and dry the high-risk power batteries. Power batteries in different risks shall be stored in different categories.
+                        Relevant information signs (vehicle information, fault conditions, etc.) shall be made. The leaked batteries shall be stored
+                        after anti-corrosion and anti-leakage packaging.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The storage site is a separate area for hazardous power batteries, which shall be far away from the production area. Warning
+                        signs such as high voltage and danger shall be made. Other materials or personnel are not allowed to approach. The site shall
+                        be equipped with basic monitoring facilities for regular patrol inspection.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Stacking is not allowed. Multi-layer steel shelves can be used (the weighting capacity of each layer shall be greater than
+                        twice the capacity of the stored battery, and the shelves shall have clear identification of the weighting capacity). At the
+                        same time, the power battery shall be placed horizontally, and shall not be placed obliquely, or upside down. Other items
+                        shall not be stacked on the power batteries to avoid damage caused by compression.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The storage environment shall be well ventilated and dry, free from direct sunlight, exposure or rain, and protected against
+                        dust, water and static electricity. The storage temperature of the power battery should be controlled at -20~45°C and the
+                        humidity should be 5~95%.
+                     </p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The storage area shall be provided with smoke alarm, automatic sprinkler system, automatic smoke exhaust system and other
+                        fire extinguishing facilities (infrared temperature monitoring system is recommended to realize remote alarm).
+                     </p> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+            <div class="section">
+               <h3 class="title topictitle1">Transportation Conditions</h3> 
+               
+               
+               <ol class="num"> 
+                  
+                  <li> 
+                     
+                     <p class="p-inline">The high-risk power batteries to be transported must have no abnormal temperature rise within 24h after discharge and drying.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Protective packaging (waterproof, moisture-proof, anti-static and anti-corrosion) shall be used.</p> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Loading environment.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Ensure the roads are clear. There shall be no direct sunlight, inflammable, explosive and hazardous chemicals within the range
+                              of loading activities. Never let water and other liquids enter the power battery. In case of bad weather such as rain, suspend
+                              the outdoor loading.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Requirements for handling equipment.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Use professional equipment and tools, such as electric forklift and manual forklift with appropriate capacity, to handle and
+                              place the power batteries to avoid damage.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Requirements for carrier vehicles.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">The high-risk power batteries shall be transported in a closed carriage to prevent water from entering. Power batteries shall
+                              be transported separately. If other items need to be loaded on the same carrier vehicle, liquid, flammable, explosive and
+                              hazardous chemicals are not allowed.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Requirements for handling.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">When using the equipment to handle the power batteries, professional personnel shall operate the equipment and handle it with
+                              care. Avoid falling, rolling and heavy pressure. The packed power batteries shall be loaded in the warehouse. Never load power
+                              batteries halfway or stack other items on them.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Requirements for transportation process.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Land transportation: avoid squeezing and impact between power batteries or between power batteries and carrier vehicle body
+                              due to sudden braking. The storage temperature of the power batteries shall be -20°C~45°C and the humidity shall be 5~95%.
+                              The transport time shall be within 72h. If not, conduct special treatment to control the temperature and humidity to ensure
+                              that the products are not drenched or exposed to the sun.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">Sea transportation and air transportation: apply special packaging with hazardous packaging certification. Ordinary packaging
+                              is not allowed. MH/T1020-2009 shall be followed and UN38.3 test shall be passed for air transportation. The ambient temperature
+                              around the packaging boxes shall not exceed 45°C, and the products must not be drenched or exposed to the sun.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Handling of land transportation emergencies.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">In case of leakage of power battery, stop the transportation and contact after-sales personnel of BYD. If the electrolyte
+                              of the power battery splashes on the skin and eyes, immediately wash it with plenty of water for more than 15min, and then
+                              seek medical advice.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">When the power battery is on fire, use a non-water-based fire extinguisher to put out it. If the fire is large, use a large
+                              amount of water to extinguish the fire. After the fire is extinguished, keep cooling it with water for 30min.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">If the packaging boxes are accidentally drenched, immediately remove them, to prevent the wet boxes from becoming conductors,
+                              causing power battery discharge or burning power battery terminals.
+                           </p> 
+                           
+                        </li>  
+                        
+                        <li> 
+                           
+                           <p class="p-inline">In case of impact and serious extrusion during transportation, stop the transportation. The transportation can be continued
+                              only after the professionals eliminate the safety hazards.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li>  
+                  
+                  <li> 
+                     
+                     <p class="p-inline">Requirements for unloading.</p>  
+                     
+                     <ol class="num"> 
+                        
+                        <li> 
+                           
+                           <p class="p-inline">The unloading environment and equipment are consistent with the loading. The unloading place shall be protected from direct
+                              sunlight and at least 2m away from heat source. Before unloading, check whether the packaging boxes are damaged on the carrier
+                              vehicle. Note the height of the carriage to prevent the battery damage caused by the impact between the forklift and the carriage.
+                           </p> 
+                           
+                        </li> 
+                        
+                     </ol> 
+                     
+                  </li> 
+                  
+               </ol> 
+               
+            </div>
+            
+            
+         </div>
+         
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

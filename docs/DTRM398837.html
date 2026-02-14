@@ -1,0 +1,410 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="EPB Applied and Released for Maintenance"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-DTRM272513"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>EPB Applied and Released for Maintenance</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-DTRM272513">
+         
+         
+         <h3 class="topictitletopic1 title">EPB Applied and Released for Maintenance</h3>
+         
+         <div class="body">
+            <div>
+               <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e9">
+                  <div class="noteheader">
+                     <div class="common tip">
+                        <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                  </div>
+                  <div class="notebody attention-text postspace-s wl-attention-content">
+                     <ul name="contents" class="ul">
+                        <li>
+                           <p class="p-inline">Before removing and installing the rear brake calipers and the rear brake pad, execute EPB maintenance release first. It may
+                              increase the assemble difficulty and result in hardware damage due to accidental EPB activation
+                           </p>
+                        </li>
+                        <li>
+                           <p class="p-inline">After the EPB maintenance release, conduct the EPB maintenance pull-up to exit the maintenance release status. The EPB system
+                              will return to normal and respond to all functions.
+                           </p>
+                        </li>
+                     </ul>
+                     
+                  </div>
+               </div>
+               
+            </div>
+            <div class="section">
+               <h3 class="title topictitle1">EPB Released for Maintenance</h3>
+               <div>
+                  <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e20">
+                     <div class="noteheader">
+                        <div class="common tip">
+                           <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                     </div>
+                     <div class="notebody attention-text postspace-s wl-attention-content">
+                        <p class="p">Use method 1 and method 2 to complete maintenance release. All functions of EPB will be invalid, so as to avoid accidental
+                           action during the maintenance process and result in EPB drive assembly damage. After the maintenance is completed and the
+                           vehicle is restored to the normal state, execute "Maintenance Apply" to restore the EPB system to the normal state.
+                        </p>
+                     </div>
+                  </div>
+                  
+               </div>
+               <ol class="num">
+                  <li>
+                     <p class="p-inline">Method 1: Use a VDS perform EPB maintenance release.</p>
+                     <p>
+                        <div class="bottomNoTable">
+                           <div class="imagecenterlevel1"><img width="85mm" style="width:85mm;" onclick="showOrHideImg(event,'show')" src="image/G131058.png"></img></div>
+                        </div>
+                     </p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Connect a VDS to OBD data link connector.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Power on the vehicle and complete the self-test.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Establish the communication between the VDS and the vehicle.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “Vehicle Diagnosis System”.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap "Passenger Car".</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap "EV Series".</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap "Song PLUS EV".</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “EPB” or “Rear Domain Control module”.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “Action test”.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “Maintenance Mode Release”.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">Method 2: Use the EPB switch and follow the steps below to perform the EPB maintenance release.</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Set the START/STOP button to ON or start the vehicle.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Press and hold the brake pedal, and the effect shall be “brake light keeps on steadily”.</p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e71">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">Press the brake pedal throughout the whole process.</p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">Press and hold EPB switch for over 10 seconds. The alarm indicator (red exclamation point indicator) on the instrument panel
+                              will start flashing.
+                           </p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e77">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">If the holding time is less than 10 seconds or more than 12 seconds, the system will automatically return to the initial state,
+                                       and repeated operation is required.
+                                    </p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">Release EPB switch within 2 seconds after the alarm indicator start flashing.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Start timing after releasing the EPB switch, and press and release EPB switch within 3~5 seconds.</p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e86">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">Press the switch again within 3 seconds or after 5 seconds after the first release, the system will automatically restore
+                                       to the original state, and repeated operation is required.
+                                    </p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">EPB will be fully released, and the alarm indicator keeps on steadily.</p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e92">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">After full release, the system will not respond to any function in this case, executing “maintenance apply” or pressing the
+                                       EPB switch is required to exit the maintenance release state.
+                                    </p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">Release the brake pedal, operation completed.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">Method 3: If both the above two methods fail due to electrical appliance failure, perform the mechanical maintenance release,
+                        and the method is as follows.
+                     </p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Remove the EPB motor drive assembly. See<a class="xref" href="DTRM352506.html">EPB Motor Drive Assembly - Removal and Installation</a></p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Use the socket head wrench to release the brake piston by turning the splines on the brake caliper body clockwise, loosen
+                              the brake piston until the thrust screw of the brake caliper body rotates freely (torque≤0.2Nm).
+                           </p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e111">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">The axial force shall not exceed 10N.</p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                     </ol>
+                     <p>
+                        <div class="bottomNoTable">
+                           <div class="imagecenterlevel1"><img width="85mm" style="width:85mm;" onclick="showOrHideImg(event,'show')" src="image/G131059.png"></img></div>
+                        </div>
+                     </p>
+                  </li>
+               </ol>
+            </div>
+            
+            <div class="section">
+               <h3 class="title topictitle1">EPB Applied for Maintenance</h3>
+               <ol class="num">
+                  <li>
+                     <p class="p-inline">Method 1: Use a VDS to perform the EPB maintenance pull-up and exit the maintenance release state.</p>
+                     <p>
+                        <div class="bottomNoTable">
+                           <div class="imagecenterlevel1"><img width="85mm" style="width:85mm;" onclick="showOrHideImg(event,'show')" src="image/G131058.png"></img></div>
+                        </div>
+                     </p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Connect a VDS to OBD data link connector.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Power on the vehicle and complete the self-test.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Establish the communication between the VDS and the vehicle.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “Vehicle Diagnosis System”.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap "Passenger Car".</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap "EV Series".</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap "Song PLUS EV".</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “EPB” or “Rear Domain Control module”.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “Action test”.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Tap “Maintenance Mode Clamping”.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">Method 2: Use the EPB switch to enable the EPB maintenance pull-up as below to exit the maintenance release status.</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Set the START/STOP button to ON or start the vehicle.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Press and hold the brake pedal, and the brake lights should stay on.</p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e168">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">Press the brake pedal throughout the whole process.</p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">Keep pulling up the EPB switch for more than 10 seconds, and the alarm indicator (red exclamation mark) on the instrument
+                              will flash.
+                           </p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e174">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">Keep pressing the switch for more than 10 seconds. Otherwise the system will return to the initial state.</p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">Release the EPB switch, and press down the EPB switch once again within 5 s;</p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e180">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">The switch shall be pressed again within 5 second after being released. Otherwise the system will be restored to the initial
+                                       state.
+                                    </p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">EPB will be applied, the alarm indicator goes out, and EPB state light lights up.</p>
+                           <div>
+                              <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d66749e186">
+                                 <div class="noteheader">
+                                    <div class="common tip">
+                                       <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                 </div>
+                                 <div class="notebody attention-text postspace-s wl-attention-content">
+                                    <p class="p">After pressing the switch to exit the maintenance release state, the EPB system will resume to the normal state, and will
+                                       be able to respond to all functions.
+                                    </p>
+                                 </div>
+                              </div>
+                              
+                           </div>
+                        </li>
+                        <li>
+                           <p class="p-inline">Release the brake pedal, operation completed.</p>
+                        </li>
+                     </ol>
+                  </li>
+               </ol>
+            </div>
+            
+         </div>
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

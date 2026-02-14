@@ -1,0 +1,313 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="System Description"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-1-F5240221"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>System Description</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-1-F5240221">
+         
+         
+         <h3 class="topictitletopic1 title">System Description</h3>
+         
+         <div class="body">
+            <div class="section">
+               <h3 class="title topictitle1">Component Location View</h3>
+               <p class="p">
+                  <div class="bottomNoTable">
+                     <div class="imagecenter"><img width="170mm" style="width:170mm;" onclick="showOrHideImg(event,'show')" src="image/G137276.png"></img></div>
+                  </div>
+               </p>
+               <p class="p">
+                  <table width="100%" border="1" frame="box" rules="all">
+                     <thead style="font-weight: bold">
+                        <tr align="center" valign="middle">
+                           <th width="50%" align="center" valign="middle">
+                              <p>SN.</p>
+                           </th>
+                           <th width="50%" align="center" valign="middle">
+                              <p>Name</p>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>1</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>4GGPS antenna</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>2</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Host assembly</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>3</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Central speaker</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>4</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Tweeter speaker</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>5</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Display assembly</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>6</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Microphone</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>7</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Subwoofer speaker</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>8</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>External Antenna</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>9</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>Low voltage speaker</p>
+                           </td>
+                        </tr>
+                        <tr align="center" valign="middle">
+                           <td width="50%" align="center" valign="middle">
+                              <p>10</p>
+                           </td>
+                           <td width="50%" align="center" valign="middle">
+                              <p>External Power Amplifier</p>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </p>
+            </div>
+            
+            <div class="section">
+               <h3 class="title topictitle1">System Function Principle</h3>
+               <ol class="num">
+                  <li>
+                     <p class="p-inline">The multimedia system includes 4G network, PAD, Bluetooth phone, intelligent voice recognition, EHU interaction, vehicle radio,
+                        USB, SD card assembly, audio&amp;video equipment interface and others.
+                     </p>
+                  </li>
+                  <li>
+                     <p class="p-inline">Main components:</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Host assembly.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">PAD display assembly.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">USB interface assembly.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">4GWiFiBT antenna.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Power amplifier assembly.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Speakers.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Noise reduction MIC.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Digital video recorder image module.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Car U-segment microphone.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">USB interface assembly:</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">2 USB interfaces, of which only one supports audio and video file reading, and both USB interfaces can charge handheld equipment.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">MP3/WMA file playback:</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Playable MP3 files.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Playable WMA files.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">4GWiFiBT antenna</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">4G Internet access, WiFi connection and others.</p>
+                        </li>
+                     </ol>
+                  </li>
+                  <li>
+                     <p class="p-inline">Radio:</p>
+                     <ol class="num">
+                        <li>
+                           <p class="p-inline">Radio band: FM:87.5mhz~108.0MHz.</p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Radio reception problem.
+                              <div>
+                                 <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d7992e171">
+                                    <div class="noteheader">
+                                       <div class="common tip">
+                                          <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                                    </div>
+                                    <div class="notebody attention-text postspace-s wl-attention-content">In addition to stereo, there are other problems such as "phase modulation", "multiplexing", and "sound attenuation” which
+                                       are not caused by electronic noise, but the transmission and reception of the signals.
+                                    </div>
+                                 </div>
+                                 
+                              </div>
+                           </p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Phase modulation: AM broadcasting is easily subject to electromagnetic or other interference, so phase modulation occurs.
+                              Phase modulation usually occurs at night. The vehicle receives two signals from the same emitter, one is reflected by the
+                              ionosphere, and the other is directly received from the emitter.
+                           </p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Multi-channel interference: this is caused by the vehicle receiving two signals from the same emitter, where one is received
+                              from the emitter, and the other is reflected by buildings, mountains or other obstacles.
+                           </p>
+                        </li>
+                        <li>
+                           <p class="p-inline">Signal attenuation: this is caused by the reflection deviation of some signals by huge obstacles (buildings, mountains, etc.)
+                              between the emitter and the receiving radio, resulting in reduced signal wave energy. High frequency signals are easier to
+                              be blocked.
+                           </p>
+                        </li>
+                     </ol>
+                  </li>
+               </ol>
+            </div>
+            
+            <div class="section">
+               <h3 class="title topictitle1">System Block Diagram</h3>
+               <p class="p">
+                  <div class="bottomNoTable">
+                     <div class="imagecenter"><img width="170mm" style="width:170mm;" onclick="showOrHideImg(event,'show')" src="image/G146510.svg" height="907" alt="G146510"></img></div>
+                  </div>
+               </p>
+            </div>
+            
+         </div>
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>

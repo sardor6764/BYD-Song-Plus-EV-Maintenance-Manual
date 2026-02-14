@@ -1,0 +1,213 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+   
+   <head>
+      
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+      
+      <meta name="copyright" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.rights.owner" content="(C) Copyright 2005"></meta>
+      
+      <meta name="DC.Type" content="topic"></meta>
+      
+      <meta name="DC.Title" content="Precautions"></meta>
+      
+      <meta name="DC.Format" content="XHTML"></meta>
+      
+      <meta name="DC.Identifier" content="topic-1-F5240221"></meta>
+      
+      <meta name="DC.Language" content="en-US"></meta>
+      
+      <link rel="stylesheet" type="text/css" href="htmlCustom.css"></link>
+      
+      <title>Precautions</title>
+      <script type="text/javascript" src="basefiles/js/dtc-step.js"></script>
+      <script type="text/javascript" src="basefiles/js/svg_topics.js"></script>
+      <script type="text/javascript">
+        function toggleImage(el) {
+            if(el.className=="thumb"){
+                el.className="full";
+            } else {
+                el.className="thumb";
+            }
+        }
+        // 点击诊断步骤中左边单元格的图片函数
+        function fnimage(th,el){
+        console.dir(el)
+        console.dir(th)
+        let oDiv =th.children.imgbox
+        console.dir(oDiv)
+        let targ = el.target
+        let targid = el.target.id
+        console.dir(targid)
+        let tname = el.target.tagName;
+        if(tname == 'IMG'){
+        
+        if(targid !='imgtt'){
+        oDiv.className="imgbox"
+        th.children.imgbox.children[1].src=targ.src
+        }
+        if(targid =='imgtt'){
+        oDiv.className="imgboxnone"
+        th.children.imgbox.children[1].src=""
+        }
+        }
+        
+        }
+        
+    </script><link rel="stylesheet" type="text/css" href="basefiles/style/svg-topics.css"></link>
+      
+      <link rel="stylesheet" type="text/css" href="basefiles/style/dtc-style.css"></link>
+      
+   </head>
+   
+   <body onload="highLightKeyword();custTopic();">
+      <section id="topic-1-F5240221">
+         
+         
+         
+         <h3 class="topictitletopic1 title">Precautions</h3>
+         
+         
+         <div class="body"> 
+            
+            <div class="section">
+               <h3 class="title topictitle1">Operation Safety Precautions and Warnings</h3> 
+               
+               
+               <p class="p"> 
+                  
+                  <div>
+                     <div class="wl-attention prespace postspace caution-imgcaution" data-attention-type="caution" id="d11708e19">
+                        <div class="noteheader">
+                           <div class="common tip">
+                              <div><img style="width:100%;height:100%;" src="basefiles/artwork/noticev2.svg"></img></div><span class="notetitleone">Caution</span></div>
+                        </div>
+                        <div class="notebody attention-text postspace-s wl-attention-content"> 
+                           
+                           <p class="p"> 
+                              
+                              <ul name="contents" class="ul">
+                                 <li> 
+                                    
+                                    <p class="p-inline">Wear insulating gloves, insulating shoes, goggles and other insulating protective equipment.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">Before maintaining high voltage components, follow the standard procedure to disable high voltage power.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">After disconnecting the high voltage component connector, use a multimeter to measure its voltage. The next step can be carried
+                                       out only after the voltage drops to the safe voltage.
+                                    </p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">When maintaining high voltage components, note the surface temperature of the housing and operate after it cools down.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">After removing the high voltage wiring harness, provide insulation protection at the high voltage wiring harness and high
+                                       voltage components interfaces.
+                                    </p> 
+                                    
+                                 </li>
+                              </ul>
+                              
+                              
+                           </p> 
+                           
+                        </div>
+                     </div>
+                     
+                  </div>  
+                  
+                  <div>
+                     <div class="wl-attention prespace postspace warning-imgwarning" data-attention-type="warning" id="d11708e52">
+                        <div class="noteheader">
+                           <div class="common tip">
+                              <div><img style="width:100%;height:100%;" src="basefiles/artwork/warningv2.svg"></img></div><span class="notetitleone">Warning</span></div>
+                        </div>
+                        <div class="notebody attention-text postspace-s wl-attention-content"> 
+                           
+                           <p class="p"> 
+                              
+                              <ul name="contents" class="ul">
+                                 <li> 
+                                    
+                                    <p class="p-inline">Nonprofessionals are not allowed to maintain and replace high voltage system components.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">Maintenance technicians without high voltage safety training are not allowed to maintain and operate high voltage components.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">Never maintain or replace high voltage components during vehicle charging.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">Before working on high voltage components, disconnect the charging port and the charging equipment, and ensure that the vehicle
+                                       is powered off.
+                                    </p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">When measuring the insulation resistance, never touch the exposed conductive parts. There may be a risk of electric shock.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">Never maintain the vehicle in corrosive, flammable and explosive gas environment. It may cause fire and explosion.</p> 
+                                    
+                                 </li>
+                                 <li> 
+                                    
+                                    <p class="p-inline">Without permission, never remove or modify the high voltage components. The high voltage components may fail and dangerous
+                                       accidents may be caused.
+                                    </p> 
+                                    
+                                 </li>
+                              </ul>
+                              
+                              
+                           </p> 
+                           
+                        </div>
+                     </div>
+                     
+                  </div> 
+                  
+               </p> 
+               
+            </div>
+            
+            
+         </div>
+         
+         
+         
+      </section>
+      <div class="scaleContainer" onclick="showOrHideImg(event,'hide')"><img id="image" alt=""></img></div><script type="text/javascript" src="basefiles/js/imageScale.js"></script><script>
+      function sendIndexCode(code){
+        window.parent.postMessage(
+          {
+            message: 'html3d',
+            token: '123456789TqwertyuioI987654321Smm',
+            index3d: code
+          },'*');
+      }
+    </script></body>
+   
+</html>
