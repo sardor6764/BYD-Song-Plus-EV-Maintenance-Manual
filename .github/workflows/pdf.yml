@@ -9,19 +9,26 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install deps
-        run: pip install pypdf beautifulsoup4
+        run: |
+          pip install pypdf beautifulsoup4
+          sudo apt-get update && sudo apt-get install -y ghostscript
 
       - name: Build PDF
         run: |
           cat > build.py << 'EOF'
-          import subprocess
+          import re, subprocess
           from pathlib import Path
           from concurrent.futures import ThreadPoolExecutor
           from bs4 import BeautifulSoup
-          from pypdf import PdfWriter
+          from pypdf import PdfReader, PdfWriter
 
           docs = Path("docs").resolve()
           out = Path("pages_pdf"); out.mkdir(exist_ok=True)
+
+          CSS = (b"<style>@page{size:A4;margin:8mm}"
+                 b"html,body{height:auto!important;min-height:0!important;overflow:visible!important}"
+                 b"*{page-break-before:auto!important;page-break-after:auto!important;"
+                 b"break-before:auto!important;break-after:auto!important}</style>")
 
           soup = BeautifulSoup((docs/"tocnav.html").read_text(errors="ignore"), "html.parser")
           pages, seen = [], set()
@@ -37,23 +44,74 @@ jobs:
           def conv(args):
               i, p = args
               pdf = out/f"{i:05d}.pdf"
-              subprocess.run(["google-chrome", "--headless", "--no-sandbox",
-                  "--disable-gpu", "--allow-file-access-from-files",
-                  "--no-pdf-header-footer", f"--user-data-dir=/tmp/c{i}",
-                  f"--print-to-pdf={pdf}", (docs/p).as_uri()],
-                  check=False, timeout=120)
+              tmp = docs/f"_tmp_{i}.html"
+              data = (docs/p).read_bytes()
+              new, n = re.subn(rb"</head>", CSS + b"</head>", data, count=1, flags=re.I)
+              tmp.write_bytes(new if n else CSS + data)
+              try:
+                  subprocess.run(["google-chrome", "--headless", "--no-sandbox",
+                      "--disable-gpu", "--allow-file-access-from-files",
+                      "--no-pdf-header-footer", f"--user-data-dir=/tmp/c{i}",
+                      f"--print-to-pdf={pdf}", tmp.as_uri()],
+                      check=False, timeout=120)
+              finally:
+                  tmp.unlink(missing_ok=True)
               return i, p, pdf
+
+          def is_blank(page):
+              try:
+                  if page.extract_text().strip():
+                      return False
+                  if len(page.images) > 0:
+                      return False
+                  c = page.get_contents()
+                  return c is None or len(c.get_data()) < 400
+              except Exception:
+                  return False
 
           with ThreadPoolExecutor(4) as ex:
               results = list(ex.map(conv, enumerate(pages, 1)))
 
           w = PdfWriter()
+          removed = 0
           for i, p, pdf in results:
-              if pdf.exists():
-                  w.append(str(pdf), outline_item=p)
-          w.write("BYD_Song_Plus_EV_Maintenance_Manual.pdf")
+              if not pdf.exists():
+                  continue
+              try:
+                  r = PdfReader(str(pdf))
+              except Exception:
+                  continue
+              first = True
+              for pg in r.pages:
+                  if is_blank(pg):
+                      removed += 1
+                      continue
+                  if first:
+                      w.add_outline_item(p, len(w.pages))
+                      first = False
+                  w.add_page(pg)
+          print("blank pages removed:", removed, "kept:", len(w.pages))
+          w.write("raw.pdf")
           EOF
           python build.py
+
+          # Сжатие до 190 МБ (уровни от мягкого к жёсткому)
+          LIMIT=$((190*1024*1024))
+          OUT=BYD_Song_Plus_EV_Maintenance_Manual.pdf
+          LEVELS=(
+            "-dPDFSETTINGS=/ebook"
+            "-dPDFSETTINGS=/screen"
+            "-dPDFSETTINGS=/screen -dColorImageResolution=50 -dGrayImageResolution=50 -dMonoImageResolution=100 -dJPEGQ=35"
+          )
+          for opt in "${LEVELS[@]}"; do
+            echo "Сжатие: $opt"
+            gs -sDEVICE=pdfwrite -dCompatibilityLevel=1.5 $opt \
+               -dNOPAUSE -dQUIET -dBATCH -sOutputFile=$OUT raw.pdf
+            SIZE=$(stat -c%s $OUT)
+            echo "Размер: $((SIZE/1024/1024)) МБ"
+            if [ "$SIZE" -le "$LIMIT" ]; then break; fi
+          done
+          ls -lh raw.pdf $OUT
 
       - uses: actions/upload-artifact@v4
         with:
